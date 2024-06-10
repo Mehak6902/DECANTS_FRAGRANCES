@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Perfume Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: #333;
+      }
+
+      header {
+        color: pink;
+        padding: 40px 0;
+        text-align: center;
+        position: relative;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 3.5em;
+        filter: drop-shadow(0 0 30px rgba(255, 255, 255, 20));
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 0;
+        flex-wrap: wrap;
+      }
+
+      .category {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 30px;
+        width: calc(30% - 20px);
+        margin-bottom: 40px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .category:hover {
+        transform: translateY(-10px);
+      }
+
+      .category h2 {
+        margin-top: 0;
+        font-size: 2em;
+        color: #333;
+      }
+
+      .category ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .product {
+        margin-top: 20px;
+        background-color: transparent;
+        border: none;
+      }
+
+      .product img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .product img:hover {
+        transform: scale(1.05);
+      }
+
+      .product h3 {
+        margin-top: 0;
+        font-size: 1.8em;
+        color: #333;
+      }
+
+      .product p {
+        font-size: 1.1em;
+        color: #666;
+      }
+
+      .product button {
+        background-color: #e0a80d;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 20px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .product button:hover {
+        background-color: #cf930a;
+        transform: scale(1.05);
+      }
+
+      footer {
+        background-color: #1c1c1c;
+        color: #fff;
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>GALLEY OF EQUISITE PERFUMES</h1>
+      </div>
+    </header>
+
+    <section class="categories">
+      <div class="category">
+        <h2>Floral</h2>
+        <ul>
+          <li class="product">
+            <img
+              src="https://www.nykaa.com/beauty-blog/wp-content/uploads/images/issue246/eightfloral04.jpg"
+              alt="Floral Perfume 1"
+            />
+            <h3>Floral Perfume 1</h3>
+            <p>
+              A romantic blend of jasmine and rose with a hint of citrus.
+              Perfect for everyday wear.
+            </p>
+            <button>View Details</button>
+          </li>
+          <li class="product">
+            <img
+              src="https://img.freepik.com/premium-photo/luxurious-bottle-women-s-perfume-with-notes-peony-delicate-floral-fragrance-expression-natural-odors-pink-background_425936-3697.jpg"
+              alt="Floral Perfume 2"
+            />
+            <h3>Floral Perfume 2</h3>
+            <p>
+              A fresh and delicate floral scent with notes of peony and
+              magnolia. Ideal for special occasions.
+            </p>
+            <button>View Details</button>
+          </li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Woody</h2>
+        <ul>
+          <li class="product">
+            <img
+              src="https://johnphillips.in/cdn/shop/files/Woody_422b8adc-9dba-45d2-9d29-4d7c62b52560_1120x.jpg?v=1711954358"
+              alt="Woody Perfume 1"
+            />
+            <h3>Woody Perfume 1</h3>
+            <p>
+              An earthy and sensual fragrance featuring sandalwood and
+              cedarwood. Perfect for evenings.
+            </p>
+            <button>View Details</button>
+          </li>
+          <li class="product">
+            <img
+              src="https://rukminim2.flixcart.com/image/750/900/l1l1rww0/perfume/d/i/f/100-oud-woody-parfum-with-long-lasting-fragrances-100ml-for-men-original-imagd4d2nzfx83yz.jpeg?q=20&crop=false"
+              alt="Woody Perfume 2"
+            />
+            <h3>Woody Perfume 2</h3>
+            <p>
+              A rich and warm scent with notes of oud and amber. Ideal for the
+              modern man.
+            </p>
+            <button>View Details</button>
+          </li>
+        </ul>
+      </div>
+      <div class="category">
+        <h2>Citrus</h2>
+        <ul>
+          <li class="product">
+            <img
+              src="https://m.media-amazon.com/images/I/61ba4XfeaVL.jpg"
+              alt="Citrus Perfume 1"
+            />
+            <h3>Citrus Perfume 1</h3>
+            <p>
+              A refreshing and invigorating fragrance with hints of lemon and
+              bergamot. Perfect for summer days.
+            </p>
+            <button>View Details</button>
+          </li>
+          <li class="product">
+            <img
+              src="https://images-cdn.ubuy.co.in/63615359a3b4ac18d051d235-bergamot-perfume-citrus-perfume.jpg"
+              alt="Citrus Perfume 2"
+            />
+            <h3>Citrus Perfume 2</h3>
+            <p>
+              A zesty and vibrant scent featuring grapefruit and orange. Ideal
+              for boosting your mood.
+            </p>
+            <button>View Details</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    
+  </body>
+</html>

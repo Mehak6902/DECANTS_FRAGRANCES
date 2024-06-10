@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Us - Enchanting Aromas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@1,300&display=swap');
+
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #333;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      padding: 60px 0;
+      background: #f1c40f;
+      color: #fff;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      animation: slide-in 1s ease-out;
+    }
+    @keyframes slide-in {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 3.5em;
+      font-family: 'Playfair Display', serif;
+    }
+    .header p {
+      font-size: 1.3em;
+      margin: 10px 0 0;
+    }
+    .content {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      margin-top: -40px;
+      animation: fade-in 1s ease-out;
+    }
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .content h2 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      color: #333;
+      position: relative;
+    }
+    .content h2::after {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background: #f1c40f;
+      display: block;
+      margin: 10px auto;
+      border-radius: 3px;
+      animation: grow 1s ease-out;
+    }
+    @keyframes grow {
+      from {
+        width: 0;
+      }
+      to {
+        width: 50px;
+      }
+    }
+    .content p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 20px auto;
+      animation: fade-up 1s ease-out;
+    }
+    @keyframes fade-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+    .value {
+      flex: 1;
+      max-width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .value:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .value img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    .value img:hover {
+      transform: scale(1.1);
+    }
+    .value h3 {
+      font-size: 1.7em;
+      margin-bottom: 10px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1c40f;
+      color: #fff;
+      animation: slide-up 1s ease-out;
+    }
+    @keyframes slide-up {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    .footer p {
+      margin: 0;
+    }
+    .social-icons {
+      margin-top: 10px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Enchanting Aromas</h1>
+      <p>Crafting Fragrances That Speak to Your Soul</p>
+    </div>
+    <div class="content">
+      <h2>Our Story</h2>
+      <p>At Enchanting Aromas, we believe that fragrance is more than just a scent – it's a journey, an experience, and a memory. Our passion for creating unique, high-quality fragrances stems from our love for the art of perfumery. Each of our scents is carefully crafted using the finest ingredients sourced from around the world, ensuring that every bottle is a masterpiece.</p>
+      <p>Founded in 2010, Enchanting Aromas has grown from a small boutique to a renowned brand, known for our dedication to quality and our commitment to sustainability. We take pride in our artisanal approach, blending traditional techniques with modern innovation to create fragrances that are timeless yet contemporary.</p>
+      <h2>Our Values</h2>
+      <div class="values">
+        <div class="value">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/15-best-expensive-perfumes-6570e72fdb42c.jpg?crop=0.505xw:1.00xh;0.248xw,0&resize=640:*" alt="Quality">
+          <h3>Quality</h3>
+          <p>We are dedicated to using only the highest quality ingredients to ensure our fragrances are exceptional and long-lasting.</p>
+        </div>
+        <div class="value">
+          <img src="https://img.freepik.com/premium-photo/minimalist-scene-cosmetic-bottle-serene-water-surface-with-beautiful-natural-layout-mockup_655090-299029.jpg" alt="Sustainability">
+          <h3>Sustainability</h3>
+          <p>Our commitment to the environment is reflected in our sustainable sourcing practices and eco-friendly packaging.</p>
+        </div>
+        <div class="value">
+          <img src="https://the-perfume-lounge.com/wp-content/uploads/2022/09/SET-3B.jpg" alt="Innovation">
+          <h3>Innovation</h3>
+          <p>We embrace innovation to create unique scents that push the boundaries of traditional perfumery.</p>
+        </div>
+        <div class="value">
+          <img src="https://m.media-amazon.com/images/I/81I4fVzIkqL._AC_UF1000,1000_QL80_.jpg" alt="Craftsmanship">
+          <h3>Craftsmanship</h3>
+          <p>Our artisanal approach ensures that each fragrance is a work of art, meticulously crafted with attention to detail.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 Enchanting Aromas. All rights reserved.</p>
+      
+    </div>
+  </div>
+</body>
+</html>

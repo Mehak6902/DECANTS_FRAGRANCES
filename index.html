@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enchanting Aromas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-FJ6g7uJjiAkVKHrsEEn4L2Zz5b5rYyCw4lJMngUsDCiW68HcUHHVBNW4E6DOv5HzgFKPhPcGh4L0JV/z2Y9V1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><i class="fas fa-perfume"></i> Enchanting Aromas        </h1>
+        <!-- Icon along with the title -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--HERO SECTION-->
+    <section id="home" class="hero">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4c861968-a461-43fe-87ab-c51b6171e933/dfptovs-dfc3ffdb-1d98-4932-abef-74435139e18d.png/v1/fill/w_1280,h_854,q_80,strp/perf_ultra_luxury_chic_perfume_bottle_design_infin_by_leoncio22_dfptovs-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvNGM4NjE5NjgtYTQ2MS00M2ZlLTg3YWItYzUxYjYxNzFlOTMzXC9kZnB0b3ZzLWRmYzNmZmRiLTFkOTgtNDkzMi1hYmVmLTc0NDM1MTM5ZTE4ZC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.D131RHVvlfddvJQWQOaKYSLkCB4odkBWdjloc7eEF9w"
+              alt="Slide 1"
+            />
+            <div class="container">
+              <h2>Discover Your Perfect Scent</h2>
+              <p>
+                Experience the luxury of modern fragrances tailored for you.
+              </p>
+              <button>Shop Now</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.uzonepackaging.com/wp-content/uploads/2024/03/Perfume-Bottle-Design.webp"
+              alt="Slide 2"
+            />
+            <!-- Replace with actual image URL -->
+            <div class="container">
+              <h2>Elegance in Every Bottle</h2>
+              <p>Find a fragrance that matches your style and personality.</p>
+              <button><a style="color: white" href="templates/explore.html">Explore Now</a></button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4c861968-a461-43fe-87ab-c51b6171e933/dfptozj-288b3201-999e-4b86-b507-027977bd76cc.png/v1/fill/w_1280,h_854,q_80,strp/perf_ultra_luxury_chic_perfume_bottle_design_infin_by_leoncio22_dfptozj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvNGM4NjE5NjgtYTQ2MS00M2ZlLTg3YWItYzUxYjYxNzFlOTMzXC9kZnB0b3pqLTI4OGIzMjAxLTk5OWUtNGI4Ni1iNTA3LTAyNzk3N2JkNzZjYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.byuBtfcy8YpF3bJFgC1_S3bIe-JaYgYGw_PDZxlmYJ0"
+              alt="Slide 3"
+            />
+            <!-- Replace with actual image URL -->
+            <div class="container">
+              <h2>Unforgettable Aromas</h2>
+              <p>Discover scents that leave a lasting impression.</p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4c861968-a461-43fe-87ab-c51b6171e933/dfptp4q-fa1b13c9-f48a-4633-b771-1a8fd2be71bc.png/v1/fill/w_1095,h_730,q_70,strp/perf_ultra_luxury_chic_perfume_bottle_design_black_by_leoncio22_dfptp4q-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvNGM4NjE5NjgtYTQ2MS00M2ZlLTg3YWItYzUxYjYxNzFlOTMzXC9kZnB0cDRxLWZhMWIxM2M5LWY0OGEtNDYzMy1iNzcxLTFhOGZkMmJlNzFiYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19._I5gpKO360bDSW2OsZP6dJZhl9eO2iHe85CFrPKLJRc"
+              alt="Slide 4"
+            />
+            <!-- Replace with actual image URL -->
+            <div class="container">
+              <h2>Timeless Classics</h2>
+              <p>Explore fragrances that stand the test of time.</p>
+              <button>
+                <a style="color: white" href="templates/collections.html">Browse Collections</a>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.perfumedirect.com/cdn/shop/articles/Top_7_Luxury_Perfume_Brands_For_Women_and_Their_Best_Scents_BLOG_1024x1024.png?v=1682432203"
+              alt="Slide 5"
+            />
+            <!-- Replace with actual image URL -->
+            <div class="container">
+              <h2>Summer Specials</h2>
+              <p>Refresh your senses with our summer fragrance collection.</p>
+              <button><a style="color: white" href="#">See More</a></button>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!--HERO SECTION ENDS HERE-->
+
+    <!--PRODUCTS SECTION-->
+    <section id="products" class="products">
+      <div class="container">
+        <h2 style="color: white; font-size: 70px; text-align: center">
+          Our Fragrances
+        </h2>
+        <div class="product-grid">
+          <!-- Example product items -->
+
+          <div class="product-item">
+            <img
+              src="https://miro.medium.com/v2/resize:fit:700/1*_Yi_8iL3DBnFvIf5u2nFgQ.jpeg"
+              alt="Product 3"
+            />
+            <h3>Timeless Elegance</h3>
+            <p>An exquisite blend of citrus and floral notes.</p>
+            <button>Buy Now</button>
+          </div>
+          <div class="product-item">
+            <img
+              src="https://rukminim2.flixcart.com/image/1100/1300/xif0q/perfume/8/m/q/100-ocean-breeze-perfume-fresh-and-exhilarating-scent-long-original-imagz3y4acpyygda.jpeg?q=90&crop=false"
+              alt="Product 4"
+            />
+            <h3>Ocean Breeze</h3>
+            <p>A refreshing scent reminiscent of a day at the beach.</p>
+            <button>Buy Now</button>
+          </div>
+          <div class="product-item">
+            <img
+              src="https://www.raiphalail.com/cdn/shop/files/oudnoirbg.jpg?v=1697816967&width=1946"
+              alt="Product 5"
+            />
+            <h3>Mystic Nights</h3>
+            <p>A captivating fragrance perfect for evening wear.</p>
+            <button>Buy Now</button>
+          </div>
+
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT SECTION STARTS HERE-->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 style="text-align: center; font-size: 60px">About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              At Enchanting Aromas, we believe in the power of scent. Our
+              passion for fine fragrances drives us to curate the best selection
+              for our customers. With years of experience in the industry, we
+              have established ourselves as leaders in providing unique and
+              luxurious scents that elevate everyday experiences.
+            </p>
+          </div>
+          <button 
+            class="mt-4"
+            style="
+              color: white;
+              text-align: center;
+              margin-bottom: 20px;
+              padding: 12px 24px;
+              background-color: #e0a80d;
+              border: none;
+              border-radius: 8px;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              transition: background-color 0.3s, transform 0.3s;
+            "
+          > <a style="color: white" href="templates/about.html">
+            KNOW MORE </a>
+          </button>
+          <div class="about-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT SECTION-->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 style="font-size: 40px">Contact Us</h2>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>1234 Street Name, City, Country</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+123 456 7890</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@example.com</p>
+          </div>
+        </div>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>
+              We provide the finest fragrances that capture your unique essence.
+              Discover a scent that resonates with you.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for the latest updates.</p>
+            <form>
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Enchanting Aromas. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper-container", {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

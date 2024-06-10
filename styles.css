@@ -1,0 +1,611 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(0, 0, 0); /* Semi-transparent black color */
+    color: #fff; /* White text color */
+    padding: 1em 0; /* Adjust padding as needed */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    box-shadow: 0 2px 4px rgb(0, 0, 0); /* Add shadow for glass effect */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1.5em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e0a80d;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero .swiper-container {
+    width: 100%;
+    height: 100vh; /* Ensure the swiper container takes full viewport height */
+}
+
+.hero .swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the slides take full container height */
+}
+
+.hero .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the image to cover the container */
+    position: absolute; /* Remove if it's causing issues */
+    top: 0;
+    left: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero button {
+    background-color: #e0a80d;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-in-out;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #cf930a;
+    transform: scale(1.05);
+}
+
+/* Swiper pagination and navigation styles */
+.swiper-pagination-bullet {
+    background: #e0a80d;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #e0a80d;
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Products section styles */
+.products {
+    background-color: black;
+    padding: 4em 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+    justify-items: center;
+}
+
+.product-item {
+    background-color: black; /* Light grey background color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: white; /* Text color */
+}
+
+.product-item p {
+    font-size: 1em;
+    padding: 0 1em;
+    margin-bottom: 1em;
+    color: white; /* Text color */
+}
+
+.product-item button {
+    background-color: #e0a80d;
+    color: #fff;
+    border: none;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #cf930a;
+    transform: scale(1.05);
+}
+
+/* ABOUT SECTION STYLES */
+
+about {
+    padding: 4em 0;
+    background: linear-gradient(rgba(240, 240, 240, 0.7), rgba(240, 240, 240, 0.7)), url('https://t3.ftcdn.net/jpg/06/63/50/36/360_F_663503621_GmGWHxysuNsLvcL6oYslaaljM15qN8Uj.jpg'); /* Light grey gradient background with stunning image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding for better readability */
+    text-align: center; /* Center align content */
+    position: relative; /* Ensure z-index works properly */
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.about-images {
+    width: 35%; /* Adjust width as needed */
+}
+
+.about-images img {
+    max-width: 100%; /* Ensure images are responsive */
+    display: block;
+    margin-bottom: 20px; /* Add some space between images */
+}
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em; /* Increased font size for better visibility */
+    margin-bottom: 0.5em; /* Reduce margin bottom for tighter spacing */
+    color: #0a0a0a; /* Dark grey heading color for better contrast */
+    animation: fadeInUp 1s ease-in-out; /* Add fade-in animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for depth */
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Improve readability with appropriate line height */
+    color: #060606; /* Slightly lighter text color for better contrast */
+    animation: fadeInUp 1s ease-in-out; /* Add fade-in animation */
+    padding: 0 1em; /* Add padding for better spacing */
+    font-weight: 500; /* Lighter font weight */
+    letter-spacing: 0.5px; /* Add slight letter spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add text shadow for depth */
+}
+
+/* Animated underline effect for headings */
+.about h2::after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 5px;
+    background-color: #e0a80d; /* Yellow underline color */
+    margin: 10px auto;
+    animation: underline 1s ease-in-out infinite alternate; /* Add underline animation */
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50px;
+    }
+}
+
+
+
+/* CONTACT SECTION STYLES */
+
+.contact {
+    background: url('https://www.transparenttextures.com/patterns/brick-wall-dark.png'), linear-gradient(to right, rgb(2, 2, 2), rgb(2, 2, 2));
+    background-size: cover;
+    padding: 4em 0;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #e0a80d;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.contact-info .info-item i {
+    font-size: 1.5em;
+    color: #e0a80d;
+    margin-right: 0.5em;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.675);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact form label {
+    font-size: 1.2em;
+    color: #e0a80d;
+    margin-bottom: 0.5em;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #020202;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(224, 168, 13, 0.5);
+    outline: none;
+}
+
+.contact form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact form button {
+    background-color: #e0a80d;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    align-self: center;
+}
+
+.contact form button:hover {
+    background-color: #cf930a;
+    transform: scale(1.1);
+}
+
+/* Add FontAwesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Footer styles */
+footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 2em 0;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::after {
+    content: '';
+    background: url('https://www.transparenttextures.com/patterns/brick-wall-dark.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.footer-about, .footer-links, .footer-social, .footer-newsletter {
+    flex: 1 1 calc(25% - 2em);
+    margin: 1em;
+}
+
+.footer-about h3, .footer-links h3, .footer-social h3, .footer-newsletter h3 {
+    font-size: 1.5em;
+    color: #e0a80d;
+    margin-bottom: 0.5em;
+}
+
+.footer-about p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.5em 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #e0a80d;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 1em;
+}
+
+.footer-social .social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #e0a80d;
+}
+
+.footer-newsletter p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-newsletter form {
+    display: flex;
+}
+
+.footer-newsletter form input {
+    flex: 1;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.footer-newsletter form button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #e0a80d;
+    color: #1c1c1c;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter form button:hover {
+    background-color: #cf930a;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #3a3a3a;
+    padding-top: 1em;
+}
+
+.footer-bottom p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Add FontAwesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 1em 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .about-images {
+        width: 100%;
+    }
+
+    .about-content {
+        padding: 0 10px;
+    }
+
+    .contact-info .info-item {
+        margin: 0.5em;
+    }
+
+    .form-container {
+        max-width: 400px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about, .footer-links, .footer-social, .footer-newsletter {
+        margin: 1em 0;
+        text-align: center;
+    }
+}
